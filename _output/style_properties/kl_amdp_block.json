@@ -1,0 +1,30 @@
+{
+    "group_name": "kl_amdp",
+    "title": "BB Code Merge Block",
+    "description": "",
+    "property_type": "css",
+    "css_components": [
+        "text",
+        "background",
+        "border",
+        "border_radius",
+        "padding",
+        "extra"
+    ],
+    "value_type": "",
+    "value_parameters": "",
+    "depends_on": "",
+    "value_group": "",
+    "property_value": {
+        "color": "@xf-linkColor",
+        "border-width": "1px",
+        "border-color": "@xf-textColorEmphasized",
+        "border-radius": "@xf-borderRadiusMedium",
+        "padding-top": "@xf-paddingSmall",
+        "padding-right": "@xf-paddingMedium",
+        "padding-bottom": "@xf-paddingSmall",
+        "padding-left": "@xf-paddingMedium",
+        "extra": "text-align: center;\nmargin: @xf-elementSpacer 0;"
+    },
+    "display_order": 0
+}

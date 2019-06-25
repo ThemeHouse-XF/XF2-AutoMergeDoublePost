@@ -1,0 +1,1 @@
+If enabled, merged posts will send notifications to users watching the forum/thread or being mentioned/quoted in the merged post.

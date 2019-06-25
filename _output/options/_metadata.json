@@ -1,0 +1,14 @@
+{
+    "kl_amdp_merge_message.json": {
+        "hash": "590554dfbcee8f58098a3f802d81f846"
+    },
+    "kl_amdp_merge_notifications.json": {
+        "hash": "cd4af2d9393bd89790159b6da1ebfe3b"
+    },
+    "kl_amdp_minimal_time.json": {
+        "hash": "5eef5c4b254703c7f1fff3a7270f07c3"
+    },
+    "kl_amdp_send_merge_alert.json": {
+        "hash": "0255302baa4e51afd58035d6554147d5"
+    }
+}

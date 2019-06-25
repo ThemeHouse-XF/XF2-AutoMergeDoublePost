@@ -1,0 +1,17 @@
+{
+    "public/alert_user_post_merged.html": {
+        "version_id": 1000270,
+        "version_string": "1.0.2",
+        "hash": "47c4bd79f3c72598693ce216bb8960f4"
+    },
+    "public/kl_amdp_merge_message.html": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "c15016f74e856c62cdf23623b878e67b"
+    },
+    "public/kl_amdp_merge_message.less": {
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "dde804face11f6819dac4703c0f5b081"
+    }
+}

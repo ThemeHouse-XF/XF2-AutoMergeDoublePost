@@ -1,0 +1,1 @@
+Your <a href="{postLink}">post</a> in the thread {thread} has been merged into your last post.

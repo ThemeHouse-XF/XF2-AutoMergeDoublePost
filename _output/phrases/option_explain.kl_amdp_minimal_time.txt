@@ -1,0 +1,1 @@
+When this option is enabled, the minimum merge time from all permission sets that apply to the user will be chosen. If disabled, the maximum merge time will be in effect.

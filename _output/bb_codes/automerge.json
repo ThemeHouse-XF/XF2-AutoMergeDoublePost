@@ -1,0 +1,20 @@
+{
+    "bb_code_mode": "callback",
+    "has_option": "no",
+    "replace_html": "",
+    "replace_html_email": "",
+    "replace_text": "",
+    "callback_class": "ThemeHouse\\AutoMergeDoublePost\\BbCode\\Tag\\AutoMerge",
+    "callback_method": "renderTag",
+    "option_regex": "/^\\d+$/",
+    "trim_lines_after": 0,
+    "plain_children": true,
+    "disable_smilies": true,
+    "disable_nl2br": true,
+    "disable_autolink": true,
+    "allow_empty": false,
+    "allow_signature": false,
+    "editor_icon_type": "",
+    "editor_icon_value": "",
+    "active": true
+}

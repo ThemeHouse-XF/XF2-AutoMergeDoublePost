@@ -1,0 +1,1 @@
+If enabled, a notification will be sent to the user that his post was merged into his previous one.

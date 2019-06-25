@@ -1,0 +1,1 @@
+Never auto merge double posts

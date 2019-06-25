@@ -1,0 +1,134 @@
+{
+    "kl_amdp_merge_message.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "33ce4e92fd62e08cdefd103ba8f96aec"
+    },
+    "kl_amdp_merged.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "79fb7a187dd83ac58945376923e300ce"
+    },
+    "kl_amdp_post_has_been_merged.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "424a88b92c0db0b9ada879ab93c51abc"
+    },
+    "kl_amdp_user_post_merged.txt": {
+        "global_cache": false,
+        "version_id": 1000270,
+        "version_string": "1.0.2",
+        "hash": "f8110ce058da54b78dc61e5538fe9ec8"
+    },
+    "kl_amdp_your_message_has_been_automatically_merged.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "5404a8b38a087938120b39de81403580"
+    },
+    "option.kl_amdp_merge_message.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "285f98a2c2ed693aaf7448456d3e4efa"
+    },
+    "option.kl_amdp_merge_notifications.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "8bae8b7516dfd25c6cd07d952e7951cf"
+    },
+    "option.kl_amdp_minimal_time.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "6d100082011fe19b41102fb8de08fd0a"
+    },
+    "option.kl_amdp_send_merge_alert.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "760ff6d9ba348d5b37721880d4733513"
+    },
+    "option_explain.kl_amdp_merge_message.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "639cb5b7482ea193c731b6f5b35ccfd1"
+    },
+    "option_explain.kl_amdp_merge_notifications.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "c198f45db7917c99807cccab77079049"
+    },
+    "option_explain.kl_amdp_minimal_time.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "9caa8957be0625a1369adbb5df1533b8"
+    },
+    "option_explain.kl_amdp_send_merge_alert.txt": {
+        "global_cache": false,
+        "version_id": 1010070,
+        "version_string": "1.1.0",
+        "hash": "5925cdca430dba0532bcaf6c2517ef84"
+    },
+    "option_group.kl_amdp.txt": {
+        "global_cache": false,
+        "version_id": 1010151,
+        "version_string": "1.1.1 Release Candidate 1",
+        "hash": "cbdac14499a767518a0f83255ce4efcb"
+    },
+    "option_group_description.kl_amdp.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "9760a9251ef67ad20267306c9a357271"
+    },
+    "permission.forum_klAMDPBypassMerge.txt": {
+        "global_cache": false,
+        "version_id": 1000270,
+        "version_string": "1.0.2",
+        "hash": "53a5aec60de622979fa710c766afcf65"
+    },
+    "permission.forum_klAMDPMergeTime.txt": {
+        "global_cache": false,
+        "version_id": 1010072,
+        "version_string": "1.1.0",
+        "hash": "b7d3e9c16472f1aee9f7942436c9858e"
+    },
+    "permission_interface.klAMDP.txt": {
+        "global_cache": false,
+        "version_id": 1000031,
+        "version_string": "1.0.0 Beta 1",
+        "hash": "6d5b2a3cce59c9b69add13e8376b5ee0"
+    },
+    "style_prop.kl_amdp_block.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "2332d1543ac153749502a356f5186284"
+    },
+    "style_prop_desc.kl_amdp_block.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "style_prop_group.kl_amdp.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "52116309fb0352e2b8e145028ac470f8"
+    },
+    "style_prop_group_desc.kl_amdp.txt": {
+        "global_cache": false,
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "8cfdb4f95498721e0cbe156d9c7941f0"
+    }
+}

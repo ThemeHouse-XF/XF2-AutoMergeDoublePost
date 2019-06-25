@@ -1,0 +1,6 @@
+{
+    "permission_type": "integer",
+    "interface_group_id": "klAMDP",
+    "display_order": 10000,
+    "depend_permission_id": ""
+}

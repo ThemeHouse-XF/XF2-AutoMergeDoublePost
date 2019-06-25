@@ -1,0 +1,1 @@
+Merge double posts within X minutes

@@ -1,0 +1,1 @@
+Send notifications for merged posts

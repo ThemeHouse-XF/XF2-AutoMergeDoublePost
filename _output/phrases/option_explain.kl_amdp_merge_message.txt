@@ -1,0 +1,1 @@
+If activated, a merge notification will be included into the posts that got merged to show all users, that a new post has been merged into the old one.
