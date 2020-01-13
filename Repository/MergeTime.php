@@ -6,6 +6,10 @@ use XF\Entity\Forum;
 use XF\Entity\Node;
 use XF\Mvc\Entity\Repository;
 
+/**
+ * Class MergeTime
+ * @package ThemeHouse\AutoMergeDoublePost\Repository
+ */
 class MergeTime extends Repository {
     /**
      * @param Node|Forum $node

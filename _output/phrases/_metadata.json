@@ -1,4 +1,28 @@
 {
+    "custom_bb_code_desc.automerge.txt": {
+        "global_cache": false,
+        "version_id": 1010170,
+        "version_string": "1.1.1",
+        "hash": "58437dcd51f85df13331b56557bbdea1"
+    },
+    "custom_bb_code_example.automerge.txt": {
+        "global_cache": false,
+        "version_id": 1010170,
+        "version_string": "1.1.1",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "custom_bb_code_output.automerge.txt": {
+        "global_cache": false,
+        "version_id": 1010170,
+        "version_string": "1.1.1",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "custom_bb_code_title.automerge.txt": {
+        "global_cache": false,
+        "version_id": 1010170,
+        "version_string": "1.1.1",
+        "hash": "396486f57ab9304427e51d3c4dfcd9bf"
+    },
     "kl_amdp_merge_message.txt": {
         "global_cache": false,
         "version_id": 1000070,

@@ -1,0 +1,1 @@
+BB Code for displaying the automerge notification block.

@@ -2,18 +2,23 @@
 
 namespace ThemeHouse\AutoMergeDoublePost\BbCode\Tag;
 
-use XF\PreEscaped;
+use XF\BbCode\Renderer\AbstractRenderer;
 
-class AutoMerge {
+/**
+ * Class AutoMerge
+ * @package ThemeHouse\AutoMergeDoublePost\BbCode\Tag
+ */
+class AutoMerge
+{
     /**
      * @param $tagChildren
      * @param $tagOption
      * @param $tag
      * @param array $options
-     * @param \XF\BbCode\Renderer\AbstractRenderer $renderer
+     * @param AbstractRenderer $renderer
      * @return string
      */
-    public static function renderTag($tagChildren, $tagOption, $tag, array $options, \XF\BbCode\Renderer\AbstractRenderer $renderer)
+    public static function renderTag($tagChildren, $tagOption, $tag, array $options, AbstractRenderer $renderer)
     {
         $string = $renderer->renderSubTreePlain($tagChildren);
 

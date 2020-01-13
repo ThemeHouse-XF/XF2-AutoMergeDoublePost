@@ -1,11 +1,15 @@
 <?php
 
-namespace ThemeHouse\AutoMergeDoublePost\Pub\Controller;
+namespace ThemeHouse\AutoMergeDoublePost\XF\Pub\Controller;
 
 use XF\Entity\Post;
 use XF\Mvc\ParameterBag;
 use XF\Service\Post\Editor;
 
+/**
+ * Class Thread
+ * @package ThemeHouse\AutoMergeDoublePost\XF\Pub\Controller
+ */
 class Thread extends XFCP_Thread
 {
     /**
@@ -17,23 +21,20 @@ class Thread extends XFCP_Thread
     {
         $this->assertPostOnly();
 
-        /** @var \XF\Entity\User $visitor */
-        $visitor = \XF::visitor();
-
         /** @var \XF\Entity\Thread $thread */
-        $thread = $this->assertViewableThread($params->thread_id);
+        $thread = $this->assertViewableThread($params['thread_id']);
 
         /** @var Post $lastPost */
         $lastPost = $thread->LastPost;
 
         /* Skip post merge if last post is from a different user */
-        if($lastPost->user_id === \XF::visitor()->user_id) {
-            /** @var \KL\AutoMergeDoublePost\Repository\MergeTime $mergeRepo */
+        if ($lastPost->user_id === \XF::visitor()->user_id) {
+            /** @var \ThemeHouse\AutoMergeDoublePost\Repository\MergeTime $mergeRepo */
             $mergeRepo = $this->repository('KL\AutoMergeDoublePost:MergeTime');
             $mergeTime = $mergeRepo->getVisitorMergeTime($thread->Forum);
 
 
-            if(\XF::$time <= $mergeTime + $lastPost->post_date) {
+            if (\XF::$time <= $mergeTime + $lastPost->post_date) {
                 return $this->mergeReply($params, $lastPost);
             }
         }
@@ -46,28 +47,32 @@ class Thread extends XFCP_Thread
      * @param Post $post
      * @return \XF\Mvc\Reply\Error|\XF\Mvc\Reply\Redirect|\XF\Mvc\Reply\Reroute|\XF\Mvc\Reply\View
      */
-    protected function mergeReply(ParameterBag $params, Post $post) {
+    protected function mergeReply(ParameterBag $params, Post $post)
+    {
         /* Captcha check */
         if ($this->filter('no_captcha', 'bool')) // JS is disabled so user hasn't seen Captcha.
         {
             $this->request->set('requires_captcha', true);
             return $this->rerouteController(__CLASS__, 'reply', $params);
-        }
-        else if (!$this->captchaIsValid())
-        {
-            return $this->error(\XF::phrase('did_not_complete_the_captcha_verification_properly'));
+        } else {
+            if (!$this->captchaIsValid()) {
+                return $this->error(\XF::phrase('did_not_complete_the_captcha_verification_properly'));
+            }
         }
 
         /** @var \XF\ControllerPlugin\Editor $editorPlugin */
         $editorPlugin = $this->plugin('XF:Editor');
         $secondMessage = $editorPlugin->fromInput('message');
 
+        if (!strlen(trim($secondMessage))) {
+            return $this->error(\XF::phrase('please_enter_valid_message'));
+        }
+
         $options = \XF::app()->options();
-        if($options->kl_amdp_merge_message) {
+        if ($options->kl_amdp_merge_message) {
             $time = \XF::$time;
             $mergeMessage = "\n[automerge]{$time}[/automerge]";
-        }
-        else {
+        } else {
             $mergeMessage = '';
         }
         $message = "{$post->message}{$mergeMessage}\n{$secondMessage}";
@@ -78,15 +83,13 @@ class Thread extends XFCP_Thread
 
         /* Add attachments */
         $forum = $post->Thread->Forum;
-        if ($forum->canUploadAndManageAttachments())
-        {
+        if ($forum->canUploadAndManageAttachments()) {
             $editor->setAttachmentHash($this->filter('attachment_hash', 'str'));
         }
 
         $editor->checkForSpam();
 
-        if (!$editor->validate($errors))
-        {
+        if (!$editor->validate($errors)) {
             return $this->error($errors);
         }
 
@@ -102,13 +105,14 @@ class Thread extends XFCP_Thread
 
     /**
      * @param Editor $editor
+     * @param string $secondMessage
      */
     protected function finalizePostMerge(Editor $editor, $secondMessage)
     {
         $options = \XF::app()->options();
         $post = $editor->getPost();
 
-        if($options->kl_amdp_send_merge_alert) {
+        if ($options->kl_amdp_send_merge_alert) {
 
             /* Send merge alert to visitor */
             $visitor = \XF::visitor();
@@ -126,7 +130,7 @@ class Thread extends XFCP_Thread
             );
         }
 
-        if($options->kl_amdp_merge_notifications) {
+        if ($options->kl_amdp_merge_notifications) {
             /** @var \XF\Service\Message\Preparer $messagePreparer */
             $messagePreparer = $this->service('XF:Message\Preparer', 'post');
             $messagePreparer->prepare($secondMessage);
