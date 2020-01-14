@@ -30,7 +30,7 @@ class Thread extends XFCP_Thread
         /* Skip post merge if last post is from a different user */
         if ($lastPost->user_id === \XF::visitor()->user_id) {
             /** @var \ThemeHouse\AutoMergeDoublePost\Repository\MergeTime $mergeRepo */
-            $mergeRepo = $this->repository('KL\AutoMergeDoublePost:MergeTime');
+            $mergeRepo = $this->repository('ThemeHouse\AutoMergeDoublePost:MergeTime');
             $mergeTime = $mergeRepo->getVisitorMergeTime($thread->Forum);
 
 
