@@ -1,6 +1,6 @@
-/.idea
-vendor/
+_build/
 _data/
 _releases/
-_metadata.json
-/composer.phar
+vendor/
+
+hashes.json
